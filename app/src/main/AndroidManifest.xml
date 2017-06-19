@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.muteme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+     
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.androidhive.muteme.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="info.androidhive.muteme.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.androidhive.muteme.ViewLocationActivity"
+            android:label="@string/title_activity_view_location" >
+        </activity>
+
+         <receiver android:name="info.androidhive.muteme.AlarmReciever" >
+            <intent-filter>
+                <action android:name="com.finalproject.alarm.ACTION" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="info.androidhive.muteme.IntentServices"
+            android:enabled="true"/>
+        
+         <service android:name="info.androidhive.muteme.ServiceTest" >
+        </service>
+
+        <activity
+            android:name="info.androidhive.muteme.ViewEventsActivity"
+            android:label="@string/title_activity_view_events" >
+        </activity>
+        <activity
+            android:name="info.androidhive.muteme.ViewProfileActivity"
+            android:label="@string/title_activity_view_profile" >
+        </activity>
+    </application>
+
+</manifest>

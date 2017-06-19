@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+             >
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView2"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bd2"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Profile "
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+         >
+
+        <RadioButton
+            android:id="@+id/rdbtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="TimeBased"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rdblocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LocationBased"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblstart_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time "
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txtstart_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditText03"
+            android:layout_below="@+id/EditText03"
+            android:background="@drawable/txt_bd2"
+            android:ems="5" 
+            android:editable="false"
+            />
+
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/btn_simple_pressed"
+            android:text="Location" />
+        
+
+        <EditText
+            android:id="@+id/txtlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditText01"
+            android:layout_toRightOf="@+id/TextView01"
+            android:background="@drawable/txt_bd2"
+            android:enabled="false"
+            android:ems="5" />
+
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblend_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  End Time "
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txtend_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_bd2"
+            android:ems="5" 
+            android:editable="false"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lbllongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Radius(m)"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txtradius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/txt_bd2"
+            android:ems="5" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Msg Volume "
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekBarMsg"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Volume "
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekBarCall"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:textColor="#FFFFFF" />
+        
+        
+        <CheckBox
+            android:id="@+id/chkIsVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     " />
+        
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active "
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/chkIsActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:checked="true"
+            />
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_simple_pressed"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_simple_pressed"
+            android:text="Clear" />
+
+        
+        
+        <Button
+            android:id="@+id/btnview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_simple_pressed"
+            android:text="View" />
+        
+    </LinearLayout>
+
+</LinearLayout>

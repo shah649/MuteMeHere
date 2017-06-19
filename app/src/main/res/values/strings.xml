@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mute Me Here</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">MuteMeHere</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_view_location">ViewLocationActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_view_events">ViewEventsActivity</string>
+    <string name="title_activity_view_profile">ViewProfileActivity</string>
+
+</resources>

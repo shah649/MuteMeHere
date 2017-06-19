@@ -1,0 +1,24 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"                
+    android:layout_gravity="center"
+    android:fillViewport="true"  
+    android:padding="5dip"
+    tools:context=".ViewProfileActivity" 
+        android:background="@drawable/bg"
+    >      
+    
+  
+ <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:background="@color/black_overlay"
+        >
+
+    </ListView>
+    
+    </ScrollView>
+    <!-- From: file:/D:/Old%20stuff/Final%20Project/MuteMeHere/app/src/main/res/layout/activity_view_profile.xml -->
